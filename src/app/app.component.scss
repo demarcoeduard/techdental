@@ -1,0 +1,23 @@
+@use "/src/styles" as *;
+
+/* NAVBAR */
+
+.montserrat {
+  font-size: 30px;
+  padding-left: 5px;
+}
+
+.nav-link {
+  font-size: 20px;
+  margin-right: 5px;
+  transition: opacity 0.5s ease;
+}
+
+.navbar-nav:hover > :not(:hover) {
+  opacity: 0.4;
+}
+
+.navbar-toggler {
+  color: $secondary;
+  border-color: $secondary;
+}
