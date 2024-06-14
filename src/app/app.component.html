@@ -31,4 +31,26 @@
       </div>
     </div>
   </div>
+  <div id="features" class="bg-light">
+    <div class="container">
+      <h3 class="d-flex align-items-center text-primary raleway-bold">
+        <hr>Features
+      </h3>
+      <div class="row d-flex flex-lg-row flex-column gap-lg-0 gap-5">
+        <div class="col" *ngFor="let feature of features">
+          <div class="card bg-primary feature-card">
+            <h4 class="text-white open-sans-bold text-center">{{ feature.title }}</h4>
+            <img class="feature-image m-auto" [src]="feature.image" alt="feature-image">
+            <ul class="text-white">
+              <li>{{ feature.point1 }}</li>
+              <br>
+              <li>{{ feature.point2 }}</li>
+              <br>
+              <li>{{ feature.point3 }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
