@@ -21,3 +21,162 @@
   color: $secondary;
   border-color: $secondary;
 }
+
+main {
+  padding-top: 72px;
+}
+
+/* HOME */
+
+#home {
+  padding: 60px 0px;
+}
+
+@media (width < 576px) {
+  #home {
+    padding-left: 20px;
+  }
+
+  h1 {
+    font-size: 45px;
+    width: 320px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+
+  .btn-hero {
+    width: 110px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+@media (width >= 576px) {
+  h1 {
+    font-size: 45px;
+    width: 320px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+
+  .btn-hero {
+    width: 110px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+@media (width >= 768px) {
+  h1 {
+    font-size: 45px;
+    width: 320px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+
+  .btn-hero {
+    width: 110px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .hero-img {
+    width: 300px;
+  }
+}
+
+@media (width >= 992px) {
+  h1 {
+    font-size: 65px;
+    width: auto;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .btn-hero {
+    width: 130px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .hero-img {
+    width: 450px;
+  }
+}
+
+@media (width >= 1200px) {
+  h1 {
+    font-size: 80px;
+    width: auto;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .btn-hero {
+    width: 150px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .hero-img {
+    width: 500px;
+  }
+}
+
+@media (width >= 1400px) {
+  h1 {
+    font-size: 90px;
+    width: auto;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .btn-hero {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .hero-img {
+    width: auto;
+  }
+}
