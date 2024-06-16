@@ -54,28 +54,7 @@ main {
   }
 }
 
-@media (width >= 576px) {
-  h1 {
-    font-size: 65px;
-    max-width: 490px;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  .btn-hero {
-    width: 130px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    margin-top: 15px;
-  }
-}
-
-@media (width >= 768px) {
+@media (width >= 576px), (width >= 768px) {
   h1 {
     font-size: 65px;
     max-width: 490px;
@@ -184,18 +163,7 @@ hr {
   height: 1px;
 }
 
-@media (width < 576px) {
-  h3 {
-    font-size: 25px;
-  }
-  
-  hr {
-    width: 40px;
-    margin-right: 10px;
-  }
-}
-
-@media (width >= 576px) {
+@media (width < 576px), (width >= 576px) {
   h3 {
     font-size: 25px;
   }
@@ -268,26 +236,7 @@ li {
   padding: 50px 30px;
 }
 
-@media (width < 576px) {
-  h4 {
-    font-size: 20px;
-  }
-  
-  .feature-image {
-    width: 100px;
-  }
-  
-  li {
-    font-size: 16px;
-    margin-left: -5px;
-  }
-  
-  .feature-card {
-    padding: 30px 10px;
-  }
-}
-
-@media (width >= 576px) {
+@media (width < 576px), (width >= 576px) {
   h4 {
     font-size: 20px;
   }
@@ -395,37 +344,7 @@ li {
   object-fit: cover;
 }
 
-@media (width < 576px) {
-  .about-text {
-    font-size: 16px;
-  }
-  
-  h5 {
-    font-size: 20px;
-  }
-}
-
-@media (width >= 576px) {
-  .about-text {
-    font-size: 16px;
-  }
-  
-  h5 {
-    font-size: 20px;
-  }
-}
-
-@media (width >= 768px) {
-  .about-text {
-    font-size: 16px;
-  }
-  
-  h5 {
-    font-size: 20px;
-  }
-}
-
-@media (width >= 992px) {
+@media (width < 576px), (width >= 576px), (width >= 768px), (width >= 992px) {
   .about-text {
     font-size: 16px;
   }
@@ -487,33 +406,9 @@ li {
   border-bottom-right-radius: 10px;
 }
 
-@media (width < 576px) {
+@media (width < 576px), (width >= 576px), (width >= 768px), (width >= 992px), (width >= 1200px) {
   .service {
     min-height: 250px;
-  }
-}
-
-@media (width >= 576px) {
-  .service {
-    min-height: 250px;
-  }
-}
-
-@media (width >= 768px) {
-  .service {
-    min-height: 250px;
-  }
-}
-
-@media (width >= 992px) {
-  .service {
-    min-height: 250px;
-  }
-}
-
-@media (width >= 1200px) {
-  .service {
-    height: 250px;
   }
 }
 
@@ -557,49 +452,7 @@ span {
   color: red;
 }
 
-@media (width < 576px) {
-  i {
-    font-size: 30px;
-  }
-  
-  .contact-info {
-    font-size: 20px;
-  }
-  
-  label {
-    font-size: 20px;
-  }
-}
-
-@media (width >= 576px) {
-  i {
-    font-size: 30px;
-  }
-  
-  .contact-info {
-    font-size: 20px;
-  }
-  
-  label {
-    font-size: 20px;
-  }
-}
-
-@media (width >= 768px) {
-  i {
-    font-size: 30px;
-  }
-  
-  .contact-info {
-    font-size: 20px;
-  }
-  
-  label {
-    font-size: 20px;
-  }
-}
-
-@media (width >= 992px) {
+@media (width < 576px), (width >= 576px), (width >= 768px), (width >= 992px) {
   i {
     font-size: 30px;
   }
