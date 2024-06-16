@@ -172,23 +172,63 @@
             <p class="contact-info text-primary pt-3 open-sans-semibold">123 Dental St, Smile City, SC 12345</p>
           </div>
         </div>
-        <form class="row">
+        <form class="row"(ngSubmit)="onSubmit(form)" #form="ngForm">
           <div class="d-flex flex-column text-primary mb-3">
             <label for="name" class="form-label open-sans-semibold">Name</label>
-            <input id="name" class="form-control-lg border-1 border-secondary" type="text" placeholder="John Doe" required>
+            <input 
+              #name="ngModel" 
+              ngModel 
+              name="name" 
+              id="name" 
+              class="form-control-lg border-1"
+              [ngClass]="name.invalid && name.touched ? 'border-alert' : 'border-secondary'" 
+              type="text" 
+              placeholder="John Doe" 
+              required>
+            <span *ngIf="name.touched && name.invalid">Name is required!</span>
           </div>
           <div class="d-flex flex-column text-primary mb-3">
             <label for="email" class="form-label open-sans-semibold">Email</label>
-            <input id="email" class="form-control-lg border-1 border-secondary" type="email" placeholder="example@gmail.com" required>
+            <input 
+              #email="ngModel" 
+              ngModel 
+              name="email" 
+              id="email" 
+              class="form-control-lg border-1"
+              [ngClass]="email.invalid && name.touched ? 'border-alert' : 'border-secondary'" 
+              type="email" 
+              placeholder="example@gmail.com" 
+              required>
+            <span *ngIf="email.touched && name.invalid">Email is required!</span>
           </div>
           <div class="d-flex flex-column text-primary mb-4">
             <label for="message" class="form-label open-sans-semibold">Message</label>
-            <textarea id="message" class="form-control-lg border-1 border-secondary" placeholder="Message..." required></textarea>
+            <textarea 
+              #message="ngModel" 
+              ngModel 
+              name="message" 
+              id="message" 
+              class="form-control-lg border-1" 
+              [ngClass]="message.invalid && message.touched ? 'border-alert' : 'border-secondary'"
+              placeholder="Message..." 
+              required>
+            </textarea>
+            <span *ngIf="message.touched && message.invalid">Message is required!</span>
           </div>
           <div class="row d-flex m-auto">
-            <button type="submit" class="btn btn-hero btn-secondary open-sans-bold">Send Message</button>
+            <button [disabled]="!form.valid" id="submit-btn" type="submit" [attr.data-bs-toggle]="'modal'" [attr.data-bs-target]="'#modal'" class="btn btn-hero btn-secondary open-sans-bold">Send Message</button>
           </div>
         </form>
+      </div>
+    </div>
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body d-flex flex-row justify-content-between">
+            <p class="modal-title fs-5 raleway-bold">Message Sent!</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

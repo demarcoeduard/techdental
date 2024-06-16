@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -29,4 +30,8 @@ export class AppComponent {
       point3: "Biocompatible: Materials are safe and tolerated by the body."
     }
   ]
+
+  onSubmit(form: NgForm) {
+    form.resetForm();
+  }
 }

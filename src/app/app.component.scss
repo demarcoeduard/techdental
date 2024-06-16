@@ -545,6 +545,18 @@ textarea {
   height: 150px;
 }
 
+.border-alert {
+  border-color: red;
+
+  &:focus {
+    outline-color: red;
+  }
+}
+
+span {
+  color: red;
+}
+
 @media (width < 576px) {
   i {
     font-size: 30px;
