@@ -87,7 +87,7 @@ main {
 @media (width >= 768px) {
   h1 {
     font-size: 45px;
-    width: 320px;
+    max-width: 500px;
   }
 
   h2 {
@@ -113,7 +113,7 @@ main {
 @media (width >= 992px) {
   h1 {
     font-size: 65px;
-    width: auto;
+    max-width: 600px;
   }
 
   h2 {
@@ -138,7 +138,7 @@ main {
 @media (width >= 1200px) {
   h1 {
     font-size: 80px;
-    width: auto;
+    min-width: 600px;
   }
 
   h2 {
@@ -163,7 +163,7 @@ main {
 @media (width >= 1400px) {
   h1 {
     font-size: 90px;
-    width: auto;
+    min-width: 650px;
   }
 
   h2 {
