@@ -522,3 +522,109 @@ li {
     height: 300px;
   }
 }
+
+/* CONTACT US */
+
+#contact-us {
+  padding: 30px 0px 60px 0px;
+}
+
+i {
+  font-size: 40px;
+}
+
+.contact-info {
+  font-size: 25px;
+}
+
+label {
+  font-size: 30px;
+}
+
+textarea {
+  height: 150px;
+}
+
+@media (width < 576px) {
+  i {
+    font-size: 30px;
+  }
+  
+  .contact-info {
+    font-size: 20px;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+}
+
+@media (width >= 576px) {
+  i {
+    font-size: 30px;
+  }
+  
+  .contact-info {
+    font-size: 20px;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+}
+
+@media (width >= 768px) {
+  i {
+    font-size: 30px;
+  }
+  
+  .contact-info {
+    font-size: 20px;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+}
+
+@media (width >= 992px) {
+  i {
+    font-size: 30px;
+  }
+  
+  .contact-info {
+    font-size: 20px;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+}
+
+@media (width >= 1200px) {
+  i {
+    font-size: 35px;
+  }
+  
+  .contact-info {
+    font-size: 23px;
+  }
+  
+  label {
+    font-size: 25px;
+  }
+}
+
+@media (width >= 1400px) {
+  i {
+    font-size: 40px;
+  }
+  
+  .contact-info {
+    font-size: 25px;
+  }
+  
+  label {
+    font-size: 30px;
+  }
+}
