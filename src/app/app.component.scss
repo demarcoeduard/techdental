@@ -33,10 +33,6 @@ main {
 }
 
 @media (width < 576px) {
-  #home {
-    padding-left: 15px;
-  }
-
   h1 {
     font-size: 55px;
     max-width: 400px;
@@ -48,8 +44,8 @@ main {
   }
 
   .btn-hero {
-    width: 110px;
-    height: 35px;
+    width: 120px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,10 +55,6 @@ main {
 }
 
 @media (width >= 576px) {
-  #home {
-    padding-left: 15px;
-  }
-
   h1 {
     font-size: 65px;
     max-width: 490px;
@@ -70,43 +62,37 @@ main {
 
   h2 {
     font-size: 30px;
-    margin-top: -10px;
   }
 
   .btn-hero {
-    width: 110px;
-    height: 35px;
+    width: 130px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 16px;
+    margin-top: 15px;
   }
 }
 
 @media (width >= 768px) {
   h1 {
-    font-size: 45px;
-    max-width: 500px;
+    font-size: 65px;
+    max-width: 490px;
   }
 
   h2 {
-    font-size: 20px;
-    margin-top: -10px;
+    font-size: 30px;
   }
 
   .btn-hero {
-    width: 110px;
-    height: 35px;
+    width: 130px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-
-  .hero-img {
-    width: 300px;
+    font-size: 16px;
+    margin-top: 15px;
   }
 }
 
